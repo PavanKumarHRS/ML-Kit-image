@@ -1,0 +1,57 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.ocr.machinelearningocr'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.ocr.machinelearningocr"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // Google ML Kit (Recommended instead of Firebase ML Vision)
+    implementation 'com.google.mlkit:text-recognition:16.0.0'  // Text Recognition
+    implementation 'com.google.mlkit:image-labeling:17.0.7'    // Image Labeling
+    implementation 'com.google.mlkit:barcode-scanning:17.3.0'  // Barcode Scanner (Optional)
+
+    // Firebase
+    implementation platform('com.google.firebase:firebase-bom:32.3.1')
+    implementation 'com.google.firebase:firebase-analytics'
+
+    // Apache POI for Excel
+    implementation 'org.apache.poi:poi-ooxml:5.2.3'
+
+    // Image Picker
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+
+    // AndroidX Libraries
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
+
+    // Testing
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+}

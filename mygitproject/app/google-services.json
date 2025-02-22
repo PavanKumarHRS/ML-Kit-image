@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "31266690316",
+    "project_id": "ml-kit-ocr-348bc",
+    "storage_bucket": "ml-kit-ocr-348bc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31266690316:android:9cf465833b659c2bb5a529",
+        "android_client_info": {
+          "package_name": "com.ocr.machinelearningocr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo758goT8mUEy3bqrtCqIDFQP_DdUvY6Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

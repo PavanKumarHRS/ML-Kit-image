@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:background="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Image"/>
+
+    <Button
+        android:id="@+id/btnSaveExcel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save to Excel"/>
+
+    <Button
+        android:id="@+id/btnReadExcel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read from Excel"/>
+
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detected Text Will Appear Here"
+        android:textSize="16sp"
+        android:padding="10dp"/>
+</LinearLayout>
